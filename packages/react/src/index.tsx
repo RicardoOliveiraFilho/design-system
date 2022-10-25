@@ -1,13 +1,31 @@
+// faz com que um component herde as propriedades de um outro component de forma nativa (como se fossem suas)
+import { ComponentProps } from 'react'
 import { styled } from './styles'
 
-const Button = styled('button', {
+export const Button = styled('button', {
   fontFamily: '$default',
-  backgroundColor: '$ignite500',
-  borderRadius: '$md',
-  height: '$4',
-  width: '$4',
+  backgroundColor: '$ignite300',
+  borderRadius: '$sm',
+  border: 0,
+  fontWeight: 'bold',
+  color: 'white',
+
+  variants: {
+    size: {
+      small: {
+        fontSize: 14,
+        padding: '$2 $4',
+      },
+      large: {
+        fontSize: 16,
+        padding: '$3 $6',
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'small',
+  },
 })
 
-export function App() {
-  return <Button>Olá Mundo</Button>
-}
+export type ButtonProps = ComponentProps<typeof Button>
