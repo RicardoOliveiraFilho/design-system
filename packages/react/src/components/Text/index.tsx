@@ -1,5 +1,5 @@
-import { ComponentProps, ElementType } from "react";
-import { styled } from "../../styles";
+import { ComponentProps, ElementType } from 'react'
+import { styled } from '../../styles'
 
 export const Text = styled('p', {
   fontFamily: '$default',
@@ -31,5 +31,5 @@ export const Text = styled('p', {
 })
 
 export interface TextProps extends ComponentProps<typeof Text> {
-  as?: ElementType, // Faz com que no pacote docs (Text.stories.tsx) o arg 'as' não fique com erro!
+  as?: ElementType // Faz com que no pacote docs (Text.stories.tsx) o arg 'as' não fique com erro!
 }
