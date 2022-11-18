@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/RicardoOliveiraFilho.png',
     alt: 'Ricardo Oliveira',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text', // É padrão!!!
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
