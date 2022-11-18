@@ -28,3 +28,5 @@ export const Heading = styled('h2', {
 export interface HeadingProps extends ComponentProps<typeof Heading> {
   as?: ElementType // Faz com que no pacote docs (Text.stories.tsx) o arg 'as' não fique com erro!
 }
+
+Heading.displayName = 'Heading'

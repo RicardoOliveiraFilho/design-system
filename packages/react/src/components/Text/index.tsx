@@ -33,3 +33,5 @@ export const Text = styled('p', {
 export interface TextProps extends ComponentProps<typeof Text> {
   as?: ElementType // Faz com que no pacote docs (Text.stories.tsx) o arg 'as' não fique com erro!
 }
+
+Text.displayName = 'Text'
