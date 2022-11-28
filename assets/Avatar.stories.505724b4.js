@@ -1,0 +1,2 @@
+import{A as t}from"./index.9d5724da.js";import"./index.d7b99224.js";import"./iframe.95e76c44.js";import"./index.5bfb39f0.js";import"./jsx-runtime.1271b706.js";const c={title:"Data display/Avatar",component:t,args:{src:"https://github.com/RicardoOliveiraFilho.png",alt:"Ricardo Oliveira"},argTypes:{src:{control:{type:"text"}}}},p={},e={args:{src:void 0}},l=["Primary","WithFallback"];export{p as Primary,e as WithFallback,l as __namedExportsOrder,c as default};
+//# sourceMappingURL=Avatar.stories.505724b4.js.map
